@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { Fragment } from 'react';
 import classes from './Header.module.css';
@@ -9,7 +10,7 @@ const Header = props => {
     <Fragment>
       <header className={classes.header}>
         <h1>ReactMeals</h1>
-        <HeaderCartButton />
+        <HeaderCartButton onClick={props.onShowCart}/>
       </header>
       <div className={classes['main-image']}>
         <img src={MealsImage} alt="A table full of delicious food" />
