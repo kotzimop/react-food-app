@@ -1,17 +1,18 @@
 /* eslint-disable no-unused-vars */
-import { Fragment } from "react";
-import classes from "./Header.module.css";
-import MealsImage from "../../assets/meals.jpg";
+import { Fragment } from 'react';
+import classes from './Header.module.css';
+import MealsImage from '../../assets/meals.jpg';
+import HeaderCartButton from './HeaderCartButton';
 
-const Header = (props) => {
+const Header = props => {
   return (
     <Fragment>
       <header className={classes.header}>
         <h1>ReactMeals</h1>
-        <button>Cart</button>
+        <HeaderCartButton />
       </header>
       <div className={classes['main-image']}>
-        <img src={MealsImage} alt="A table full of delicious food"/>
+        <img src={MealsImage} alt="A table full of delicious food" />
       </div>
     </Fragment>
   );
