@@ -1,5 +1,13 @@
+/* eslint-disable react/no-unescaped-entities */
+import { Fragment } from "react";
+import Header from "./components/Layout/Header";
+
 function App() {
-  return <div>Hello World</div>;
+  return (
+    <Fragment>
+      <Header />
+    </Fragment>
+  );
 }
 
 export default App;
